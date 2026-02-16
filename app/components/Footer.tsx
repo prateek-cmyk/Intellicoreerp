@@ -134,11 +134,26 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© 2024 IntelliCoreERP. All rights reserved.</p>
+          <p>© 2025 IntelliCoreERP. All rights reserved.</p>
           <div style={{ display: "flex", gap: "24px" }}>
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>
           </div>
+        </div>
+        <div className="footer-credit">
+          <p>
+            Made with{" "}
+            <span style={{ color: "#E74C3C", fontSize: "1.1em" }}>&hearts;</span>{" "}
+            by{" "}
+            <a
+              href="https://prateekchoudhary.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-credit-link"
+            >
+              Prateek
+            </a>
+          </p>
         </div>
       </div>
     </footer>
