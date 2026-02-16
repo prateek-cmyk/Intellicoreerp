@@ -82,6 +82,61 @@ const technologies = [
       </svg>
     ),
   },
+  {
+    name: "Odoo",
+    color: "#714B67",
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="20" fill="#714B67"/>
+        <circle cx="24" cy="24" r="10" fill="white"/>
+        <circle cx="24" cy="24" r="5" fill="#714B67"/>
+      </svg>
+    ),
+  },
+  {
+    name: "Power BI",
+    color: "#F2C811",
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <rect x="10" y="24" width="6" height="16" rx="2" fill="#F2C811"/>
+        <rect x="21" y="16" width="6" height="24" rx="2" fill="#F2C811"/>
+        <rect x="32" y="8" width="6" height="32" rx="2" fill="#F2C811"/>
+      </svg>
+    ),
+  },
+  {
+    name: "SAP",
+    color: "#0FAAFF",
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <rect x="4" y="10" width="40" height="28" rx="4" fill="#0FAAFF"/>
+        <text x="24" y="29" textAnchor="middle" fill="white" fontSize="14" fontWeight="bold" fontFamily="Arial">SAP</text>
+      </svg>
+    ),
+  },
+  {
+    name: "Power Automate",
+    color: "#0066FF",
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <rect x="4" y="4" width="40" height="40" rx="8" fill="#0066FF"/>
+        <path d="M16 14l16 10-16 10V14z" fill="white"/>
+      </svg>
+    ),
+  },
+  {
+    name: "Agentic AI",
+    color: "#6D28D9",
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="20" fill="#6D28D9"/>
+        <circle cx="24" cy="18" r="6" fill="white" opacity="0.9"/>
+        <path d="M14 36c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="white" strokeWidth="3" strokeLinecap="round" fill="none"/>
+        <circle cx="36" cy="14" r="4" fill="#A78BFA"/>
+        <path d="M36 14l-6 4" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      </svg>
+    ),
+  },
 ];
 
 export default function LogoStrip() {
