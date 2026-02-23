@@ -18,7 +18,7 @@ export default function Header() {
             <a href="/#services" onClick={() => setIsMenuOpen(false)}>Services</a>
             <a href="/#case-studies" onClick={() => setIsMenuOpen(false)}>Case Studies</a>
             <a href="/#about" onClick={() => setIsMenuOpen(false)}>About</a>
-            <a href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            <a href="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <a 
               className="btn btn-primary nav-cta-mobile" 
               href="/#contact"

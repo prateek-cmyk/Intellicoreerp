@@ -1,9 +1,11 @@
 import AboutSection from "./components/AboutSection";
 import CaseStudies from "./components/CaseStudies";
+import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import LogoStrip from "./components/LogoStrip";
+import ResourceForm from "./components/ResourceForm";
 import ServicesGrid from "./components/ServicesGrid";
 import Testimonials from "./components/Testimonials";
 import WhyChooseUs from "./components/WhyChooseUs";
@@ -17,7 +19,7 @@ const jsonLd = [
     logo: "https://www.intellicoreerp.com/logo.png",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+91 8292026272",
+      telephone: "+91 9035203994",
       contactType: "sales",
       areaServed: "IN",
     },
@@ -139,50 +141,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="form-card">
-                <h3>Download Free Resources</h3>
-                <p>
-                  Fill in your details to receive our comprehensive resource pack.
-                </p>
-                <form className="form-grid" aria-label="Resource download form">
-                  <div className="field">
-                    <label htmlFor="resource-name">Full Name</label>
-                    <input
-                      id="resource-name"
-                      name="name"
-                      type="text"
-                      autoComplete="name"
-                      placeholder="Enter your full name"
-                      required
-                    />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="resource-company">Company</label>
-                    <input
-                      id="resource-company"
-                      name="company"
-                      type="text"
-                      autoComplete="organization"
-                      placeholder="Your company name"
-                      required
-                    />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="resource-email">Business Email</label>
-                    <input
-                      id="resource-email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      placeholder="name@company.com"
-                      required
-                    />
-                  </div>
-                  <button className="btn btn-primary" type="submit">
-                    Download Resources
-                  </button>
-                </form>
-              </div>
+              <ResourceForm />
             </div>
           </div>
         </section>
@@ -203,67 +162,45 @@ export default function Home() {
                     the way.
                   </p>
                 </div>
-                <div className="card" style={{ marginTop: "24px" }}>
-                  <h3>Why Choose IntelliCoreERP?</h3>
-                  <ul>
-                    <li>Certified Microsoft Dynamics experts</li>
-                    <li>Proven track record across industries</li>
-                    <li>End-to-end implementation support</li>
-                    <li>24/7 PAN-India customer support</li>
-                  </ul>
-                  <div style={{ marginTop: "16px", display: "grid", gap: "8px" }}>
-                    <p style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: 0 }}>
-                      <strong>Email:</strong> hello@intellicoreerp.com
-                    </p>
-                    <p style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: 0 }}>
-                      <strong>Phone:</strong> +91 8292026272
-                    </p>
+                <div style={{ marginTop: "32px", display: "grid", gap: "16px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                    <div className="trust-icon" style={{ width: "40px", height: "40px" }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                      </svg>
+                    </div>
+                    <div>
+                      <strong style={{ display: "block" }}>Email</strong>
+                      <span style={{ color: "var(--color-text-muted)" }}>sales@intellicoreerp.com</span>
+                    </div>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                    <div className="trust-icon" style={{ width: "40px", height: "40px" }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <strong style={{ display: "block" }}>Phone</strong>
+                      <span style={{ color: "var(--color-text-muted)" }}>+91 9035203994</span>
+                    </div>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                    <div className="trust-icon" style={{ width: "40px", height: "40px" }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                    </div>
+                    <div>
+                      <strong style={{ display: "block" }}>Coverage</strong>
+                      <span style={{ color: "var(--color-text-muted)" }}>PAN-India Support</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="form-card">
-                <h3>Send Us a Message</h3>
-                <p>
-                  Tell us about your project and we will get back to you within 24
-                  hours.
-                </p>
-                <form className="form-grid" aria-label="Contact form">
-                  <div className="field">
-                    <label htmlFor="contact-name">Full Name</label>
-                    <input
-                      id="contact-name"
-                      name="name"
-                      type="text"
-                      autoComplete="name"
-                      placeholder="Enter your full name"
-                      required
-                    />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="contact-email">Business Email</label>
-                    <input
-                      id="contact-email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      placeholder="name@company.com"
-                      required
-                    />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="contact-message">How Can We Help?</label>
-                    <textarea
-                      id="contact-message"
-                      name="message"
-                      placeholder="Tell us about your ERP goals and challenges..."
-                      required
-                    />
-                  </div>
-                  <button className="btn btn-primary" type="submit">
-                    Send Message
-                  </button>
-                </form>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </section>

@@ -128,6 +128,80 @@ const services = [
     ),
     gradient: "linear-gradient(135deg, #0078D4 0%, #00BCF2 100%)",
   },
+  {
+    title: "SAP ERP Consulting",
+    badge: "SAP",
+    description: "End-to-end SAP implementation, migration, and support for large-scale enterprises.",
+    benefits: [
+      "SAP S/4HANA migration and deployment",
+      "Business process re-engineering",
+      "Custom ABAP development and integration",
+    ],
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <rect x="2" y="6" width="24" height="16" rx="3" fill="rgba(255,255,255,0.2)" stroke="white" strokeWidth="1.5"/>
+        <text x="14" y="18" textAnchor="middle" fill="white" fontSize="10" fontWeight="bold" fontFamily="Arial">SAP</text>
+      </svg>
+    ),
+    gradient: "linear-gradient(135deg, #0FAAFF 0%, #006BD6 100%)",
+  },
+  {
+    title: "Power BI Analytics & Dashboards",
+    badge: "PBI",
+    description: "Transform raw data into actionable insights with interactive dashboards and real-time reporting.",
+    benefits: [
+      "Custom KPI dashboards for leadership",
+      "Real-time data visualization and drill-downs",
+      "Seamless integration with ERP and CRM data",
+    ],
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <rect x="6" y="16" width="4" height="8" rx="1" fill="white" opacity="0.6"/>
+        <rect x="12" y="10" width="4" height="14" rx="1" fill="white" opacity="0.8"/>
+        <rect x="18" y="4" width="4" height="20" rx="1" fill="white"/>
+      </svg>
+    ),
+    gradient: "linear-gradient(135deg, #F2C811 0%, #E8A000 100%)",
+  },
+  {
+    title: "Odoo ERP Solutions",
+    badge: "ODO",
+    description: "Flexible, modular ERP for SMEs covering sales, inventory, accounting, and HR.",
+    benefits: [
+      "Rapid deployment with modular approach",
+      "Customizable workflows for any industry",
+      "Cost-effective alternative for growing businesses",
+    ],
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <circle cx="14" cy="14" r="11" fill="rgba(255,255,255,0.2)" stroke="white" strokeWidth="1.5"/>
+        <circle cx="14" cy="14" r="6" fill="white"/>
+        <circle cx="14" cy="14" r="3" fill="#714B67"/>
+      </svg>
+    ),
+    gradient: "linear-gradient(135deg, #714B67 0%, #9B6B8E 100%)",
+  },
+  {
+    title: "Agentic AI Solutions",
+    badge: "AGI",
+    description: "Autonomous AI agents that reason, plan, and execute complex business tasks end-to-end.",
+    benefits: [
+      "Self-operating agents for procurement and finance",
+      "Multi-step workflow automation with decision-making",
+      "Human-in-the-loop oversight with AI-driven execution",
+    ],
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="white" strokeWidth="1.5">
+        <circle cx="14" cy="10" r="5" fill="rgba(255,255,255,0.3)"/>
+        <path d="M7 24c0-3.9 3.1-7 7-7s7 3.1 7 7" strokeLinecap="round" fill="none"/>
+        <circle cx="22" cy="8" r="3" fill="rgba(255,255,255,0.4)" stroke="white"/>
+        <path d="M22 8l-4 3" strokeLinecap="round"/>
+        <circle cx="6" cy="8" r="3" fill="rgba(255,255,255,0.4)" stroke="white"/>
+        <path d="M6 8l4 3" strokeLinecap="round"/>
+      </svg>
+    ),
+    gradient: "linear-gradient(135deg, #6D28D9 0%, #A78BFA 100%)",
+  },
 ];
 
 export default function ServicesGrid() {
